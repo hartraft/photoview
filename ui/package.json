@@ -24,6 +24,7 @@
     "connect-history-api-fallback": "^1.6.0",
     "copy-to-clipboard": "^3.3.1",
     "dotenv": "^8.2.0",
+    "engine.io": "^4.0.0",
     "esbuild": "^0.8.52",
     "eslint": "^7.23.0",
     "eslint-plugin-jest": "^24.3.3",
