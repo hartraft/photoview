@@ -24,7 +24,6 @@
     "connect-history-api-fallback": "^1.6.0",
     "copy-to-clipboard": "^3.3.1",
     "dotenv": "^8.2.0",
-    "engine.io": "^4.0.0",
     "esbuild": "^0.8.52",
     "eslint": "^7.23.0",
     "eslint-plugin-jest": "^24.3.3",
@@ -49,13 +48,17 @@
     "url-join": "^4.0.1",
     "workbox-build": "^6.1.2"
   },
+  "resolutions": {
+    "engine.io": "4.0.0"
+  },
   "scripts": {
     "start": "node build.js watch",
     "build": "NODE_ENV=production node build.js",
     "test": "npm run lint && npm run jest",
     "lint": "eslint ./src --max-warnings 0 --cache",
     "jest": "jest",
-    "prepare": "(cd .. && npx husky install)"
+    "prepare": "(cd .. && npx husky install)",
+    "preinstall": "npx npm-force-resolutions"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.10",
