@@ -35,3 +35,10 @@ require (
 	gorm.io/driver/sqlite v1.1.4
 	gorm.io/gorm v1.21.6
 )
+
+replace (
+	github.com/gorilla/websocket => github.com/gorilla/websocket 1.4.1
+	github.com/miekg/dns => github.com/miekg/dns 1.1.25
+	github.com/nats-io/nats-server/v2/server => github.com/nats-io/nats-server/v2/server 2.2.0
+)
+
