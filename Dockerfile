@@ -20,7 +20,7 @@ COPY ui /app
 RUN npm run build -- --public-url $UI_PUBLIC_URL
 
 ### Build API ###
-FROM --platform=${BUILDPLATFORM:-linux/amd64} debian:bullseye-slim AS api
+FROM --platform=${BUILDPLATFORM:-linux/amd64} debian:11-slim AS api
 ARG TARGETPLATFORM
 
 COPY docker/install_build_dependencies.sh /tmp/
@@ -55,7 +55,7 @@ COPY api /app
 RUN go build -v -o photoview .
 
 ### Copy api and ui to production environment ###
-FROM debian:bullseye-slim
+FROM debian:11-slim
 ARG TARGETPLATFORM
 WORKDIR /app
 
