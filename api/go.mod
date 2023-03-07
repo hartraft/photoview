@@ -23,7 +23,7 @@ require (
 	github.com/wsxiaoys/terminal v0.0.0-20160513160801-0940f3fc43a0
 	github.com/xor-gate/goexif2 v1.1.0
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d
-	golang.org/x/image v0.0.0-20220617043117-41969df76e82
+	golang.org/x/image v0.5.0
 	gopkg.in/vansante/go-ffprobe.v2 v2.0.3
 	gorm.io/driver/mysql v1.3.4
 	gorm.io/driver/postgres v1.3.8
@@ -49,6 +49,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.14 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.7.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
